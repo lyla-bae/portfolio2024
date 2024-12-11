@@ -1,6 +1,6 @@
 /* 2차 카테고리 숨기기 */
-main #cate_menu,
-#list_view #cate_menu{
+#main nav #cate_menu,
+#list_view nav #cate_menu{
     display: none;
 }
 
