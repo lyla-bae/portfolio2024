@@ -4,6 +4,11 @@
     display: none;
 }
 
+#main{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    /* gap: 0 40px; */
+}
 main .board_wrap{
     font-size: 1.1em;
     padding: 30px 0;
@@ -114,6 +119,11 @@ main .board_wrap .board_con .reward .ic_lion::before{
     }
 }
 @media (max-width:768px){
+
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
 
     main .board_wrap{
         padding: 15px 0;
