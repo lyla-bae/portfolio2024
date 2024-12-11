@@ -48,16 +48,9 @@
         <script type="text/javascript">
             $(document).ready(function(){
                 //include
-                $("#nav").load("./nav.html");
-                $("#header").load("./header.html");
-                $("#footer").load("./footer.html");
-            });
-        </script>
-        <script type="text/javascript">
-            $(document).ready(function(){
-    
-                //include
-                $("#header").load("header.html");
+                $("#header").load("/common/header.html");
+                $("#nav").load("/common/nav.html");
+                $("#footer").load("/common/footer.html");
                 
                 //모바일에서 검색바를 누르면 검색필터가 나오게
                 $('.search_bar').click(function(){

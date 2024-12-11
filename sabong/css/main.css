@@ -191,7 +191,7 @@ main .board_wrap .board_con .reward .ic_lion::before{
     grid-template-columns: 1fr 20%;
     gap: 0px 40px;
 }
-#list_view nav{
+#list_view #nav{
     grid-column: 1/3;
     
 }
@@ -520,7 +520,7 @@ main .board_wrap .board_con .reward .ic_lion::before{
         display: flex;
         flex-direction: column;
     }
-    #list_view nav{
+    #list_view #nav{
         display: none;
     }
     #list_view #side_menu section{
