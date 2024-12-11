@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- og 태그 -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="sbj">
+        <meta property="og:title" content="사자는 봉사를 좋아해">
+        <meta property="og:image" content="./image/ogimg.jpg">
+        <meta property="og:description" content="사자는봉사를좋아해 설명">
+        <meta property="og:site_name" content="사자는 봉사를 좋아해 이름">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+    
+    
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./image/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./image/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./image/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./image/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./image/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./image/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./image/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./image/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./image/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./image/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./image/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./image/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    
+    
+    
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/font.css">
+        <link rel="stylesheet" type="text/css" href="./css/default.css">
+
+
+        <link rel="stylesheet" type="text/css" href="./css/reward.css">
+        <title>사자는 봉사를 좋아해</title>
+    </head>
+<body>
+    <div class="container" id="reward">
+        <header>
+            <!-- 메인 상단 검색 -->
+                <a class="logo" href="./index.html">
+                    <img src="./image/logo_big.png" class="hidden-mo" alt="사자는 봉사를 좋아해">
+                    <img src="./image/logo_small.png" class="visible-mo" alt="사자는 봉사를 좋아해">
+                </a>
+
+                <button class="ic ic_back visible-mo">
+                    <img src="./image/ic_back.svg" alt="뒤로 가기">
+                </button>
+                
+                <div class="search_bar_wrap">
+                    <div class="search_bar">
+                        <input type="search" placeholder="봉사활동 키워드를 입력하세요">
+                    </div>
+                    <button class="ic ic_search">
+                        <img src="./image/ic_search.svg" alt="검색어 찾기">
+                    </button>
+                </div>
+                
+                <div class="util_wrap">
+                    <a href="#" class="ic ic_bookmark">
+                        <img src="./image/ic_bookmark.svg" alt="즐겨찾기 바로가기">
+                    </a>
+                    <a href="#" class="ic ic_bell">
+                        <img src="./image/ic_bell.svg" alt="알림 바로가기">
+                    </a>
+
+                    <!-- 로그인 했을때 -->
+                    <div class="logout hidden-mo">
+                        <a href="#" class="profile">
+                            <span class="thumb">
+
+                                <!-- 등록된 프로필이 없을때 기본 썸네일 -->
+                                <img src="./image/ic_thumb.png" alt="기본 프로필 사진">
+                                
+                            </span>
+                            <span class="name">김사봉</span>
+                        </a>
+                        <a href="#" class="link_logout">
+                            <span>로그아웃</span>
+                        </a>
+                    </div>
+
+                    <!-- 로그아웃했을때 -->
+                    <!-- <div class="login hidden-mo">
+                        <a href="#" class="link_login">로그인</a>
+                    </div> -->
+                </div>
+        </header>
+
+        <nav id="top_menu" class="">
+            <!-- 사이드 검색필터 -->
+             <div id="side_menu">
+                <section id="" class="banner_wrap hidden-mo">
+                    <a href="#">
+                        <div class="ic">
+                            <img src="./image/ic_gnb04.svg" alt="리워드 샵">
+                        </div>
+                        <p class="">리워드 샵</p>
+                    </a>
+                    <a href="#">
+                        <div class="ic">
+                            <img src="./image/ic_gnb02.svg" alt="물품 나눔">
+                        </div>
+                        <p class="">물품 나눔</p>
+                    </a>
+                    <a href="#">
+                        <div class="ic">
+                            <img src="./image/ic_gnb03.svg" alt="데일리 목표">
+                        </div>
+                        <p class="">데일리 목표</p>
+                    </a>
+                </section>
+
+                <section class="">
+                    <h6 class="tab_tit">활동지역</h6>
+                    <div class="tab_wrap">
+                        <input type="checkbox" id="checkbox_local01" checked>
+                        <label for="checkbox_local01">서울</label>
+                        
+                        <input type="checkbox" id="checkbox_local02">
+                        <label for="checkbox_local02">경기</label>
+                        
+                        <input type="checkbox" id="checkbox_local03">
+                        <label for="checkbox_local03">인천</label>
+
+                        <input type="checkbox" id="checkbox_local04">
+                        <label for="checkbox_local04">강원</label>
+                        
+                        <input type="checkbox" id="checkbox_local05">
+                        <label for="checkbox_local05">충남</label>
+
+                        <input type="checkbox" id="checkbox_local06">
+                        <label for="checkbox_local06">대전</label>
+                        
+                        <input type="checkbox" id="checkbox_local07">
+                        <label for="checkbox_local07">충북</label>
+
+                        <input type="checkbox" id="checkbox_local08">
+                        <label for="checkbox_local08">세종</label>
+                        
+                        <input type="checkbox" id="checkbox_local09">
+                        <label for="checkbox_local09">부산</label>
+
+                        <input type="checkbox" id="checkbox_local10">
+                        <label for="checkbox_local10">울산</label>
+                        
+                        <input type="checkbox" id="checkbox_local11">
+                        <label for="checkbox_local11">대구</label>
+
+                        <input type="checkbox" id="checkbox_local12">
+                        <label for="checkbox_local12">경북</label>
+                        
+                        <input type="checkbox" id="checkbox_local13">
+                        <label for="checkbox_local13">경남</label>
+
+                        <input type="checkbox" id="checkbox_local14">
+                        <label for="checkbox_local14">전남</label>
+                        
+                        <input type="checkbox" id="checkbox_local15">
+                        <label for="checkbox_local15">광주</label>
+
+                        <input type="checkbox" id="checkbox_local16">
+                        <label for="checkbox_local16">전북</label>
+                        
+                        <input type="checkbox" id="checkbox_local17">
+                        <label for="checkbox_local17">제주</label>
+                        
+                        <input type="checkbox" id="checkbox_local_all">
+                        <label for="checkbox_local_all">전국</label>
+
+                    </div>
+                </section>
+
+                <section>
+                    <h6 class="tab_tit">선호 활동</h6>
+                    <div class="tab_wrap">
+                        <input type="checkbox" id="checkbox_like01" checked>
+                        <label for="checkbox_like01">OA</label>
+                        
+                        <input type="checkbox" id="checkbox_like02">
+                        <label for="checkbox_like02">마케팅</label>
+                        
+                        <input type="checkbox" id="checkbox_like03">
+                        <label for="checkbox_like03">개발</label>
+                        
+                        <input type="checkbox" id="checkbox_like04">
+                        <label for="checkbox_like04">정리</label>
+                        
+                        <input type="checkbox" id="checkbox_like05">
+                        <label for="checkbox_like05">교육</label>
+                        
+                        <input type="checkbox" id="checkbox_like06">
+                        <label for="checkbox_like06">디자인</label>
+                        
+                        <input type="checkbox" id="checkbox_like07">
+                        <label for="checkbox_like07">공예</label>
+                        
+                        <input type="checkbox" id="checkbox_like08">
+                        <label for="checkbox_like08">언어</label>
+                        
+                        <input type="checkbox" id="checkbox_like09">
+                        <label for="checkbox_like09">법률</label>
+                        
+                        <input type="checkbox" id="checkbox_like10">
+                        <label for="checkbox_like10">상담</label>
+
+                    </div>
+                </section>
+
+                <section>
+                    <h6 class="tab_tit">봉사 대상</h6>
+                    <div class="select_wrap">
+                        <select name="select_target" id="">
+                            <option value="선택하세요">선택하세요</option>
+                            <option value="아동/청소년">아동/청소년</option>
+                            <option value="아동/청소년">아동/청소년</option>
+                            <option value="아동/청소년">아동/청소년</option>
+                        </select>
+                    </div>
+                </section>
+                    
+                <section>
+                    <div class="radio_wrap">
+                        <input type="radio" id="radio_all" name="radio_onoff">
+                        <label for="radio_all">오프라인/온라인</label>
+
+                        <input type="radio" id="radio_offline" name="radio_onoff">
+                        <label for="radio_offline">오프라인</label>
+
+                        <input type="radio" id="radio_online" name="radio_onoff">
+                        <label for="radio_online">온라인</label>
+                    </div>
+                </section>
+            </div>
+
+            
+            <!-- 리워드 카테고리 메뉴 -->
+            <div id="cate_menu">
+                <section id="reward_cate" class="banner_wrap">
+                    <a href="./reward_list.html"><p>전체</p></a>
+                    <a href="./reward_list.html"><p>카테1</p></a>
+                    <a href="./reward_list.html"><p>카테2</p></a>
+                    <a href="./reward_list.html"><p>카테3</p></a>
+                    <a href="./reward_list.html"><p>카테4</p></a>
+                </section>
+            </div>
+        </nav>
+
+        <main>
+            <div class="select_wrap list_filter">
+                <select name="select_wrap" id="" class="">
+                    <option value="최신순">최신순</option>
+                    <option value="최신순">최신순</option>
+                    <option value="최신순">최신순</option>
+                </select>
+            </div>
+            <div class="list_pro_wrap">
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 길어지면 이렇게 되요상품명이 길어지면 이렇게 되요상품명이 길어지면 이렇게 되요</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 들어갑니다</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 들어갑니다</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 들어갑니다</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 들어갑니다</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 들어갑니다</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 들어갑니다</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 들어갑니다</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 들어갑니다</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 들어갑니다</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 들어갑니다</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 들어갑니다</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 들어갑니다</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 들어갑니다</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 들어갑니다</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pro">
+                    <a href="./reward_view.html" class="thumb_img">
+                        <img src="./image/ready_thumb.jpg" alt="상품 준비중입니다">
+                    </a>
+                    <div class="text_wrap">
+                        <div class="cate">카테1</div>
+                        <a href="./reward_view.html" class="tit">상품명이 들어갑니다</a>
+                        <div class="price">12800원</div>
+                        <div class="review_star">
+                            <img src="./image/ic_star.png" alt="별" class="ic sm-ic">
+                            <span>4.8</span>
+                        </div>
+                        <button class="add_cart btn_cart">
+                            <img src="./image/ic_cart.png" alt="장바구니" class="ic sm-ic">
+                            <span>장바구니</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- 하단 푸터 -->
+         <footer>
+            <p>
+                사자는봉사를좋아해@2024. All rights reserved.
+            </p>
+         </footer>
+
+         <div class="gnb visible-mo">
+            <a href="./index.html">
+                <div class="ic">
+                    <img src="./image/ic_gnb01.svg" alt="홈">
+                </div>
+                <p>홈</p>
+            </a>
+            <a href="">
+                <div class="ic">
+                    <img src="./image/ic_gnb02.svg" alt="물품 나눔">
+                </div>
+                <p>물품 나눔</p>
+            </a>
+            <a href="">
+                <div class="ic">
+                    <img src="./image/ic_gnb03.svg" alt="데일리 목표">
+                </div>
+                <p>데일리 목표</p>
+            </a>
+            <a href="">
+                <div class="ic">
+                    <img src="./image/ic_gnb04.svg" alt="리워드 샵">
+                </div>
+                <p>리워드 샵</p>
+            </a>
+            <a href="">
+                <div class="ic">
+                    <img src="./image/ic_gnb05.svg" alt="내 정보">
+                </div>
+                <p>내 정보</p>
+            </a>
+         </div>
+    </div>
+</body>
+</html>

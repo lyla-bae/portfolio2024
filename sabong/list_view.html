@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- og 태그 -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="sbj">
+        <meta property="og:title" content="사자는 봉사를 좋아해">
+        <meta property="og:image" content="./image/ogimg.jpg">
+        <meta property="og:description" content="사자는봉사를좋아해 설명">
+        <meta property="og:site_name" content="사자는 봉사를 좋아해 이름">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+    
+    
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="./image/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./image/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./image/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./image/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./image/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./image/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./image/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./image/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./image/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="./image/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./image/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="./image/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    
+    
+    
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/font.css">
+        <link rel="stylesheet" type="text/css" href="./css/default.css">
+        <title>사자는 봉사를 좋아해</title>
+    </head>
+<body>
+    <div class="container" id="list_view">
+
+        <header>
+            <!-- 메인 상단 검색 -->
+                <a class="logo" href="./index.html">
+                    <img src="./image/logo_big.png" class="hidden-mo" alt="사자는 봉사를 좋아해">
+                    <img src="./image/logo_small.png" class="visible-mo" alt="사자는 봉사를 좋아해">
+                </a>
+
+                <button class="ic ic_back visible-mo">
+                    <img src="./image/ic_back.svg" alt="뒤로 가기">
+                </button>
+                
+                <div class="search_bar_wrap">
+                    <div class="search_bar">
+                        <input type="search" placeholder="봉사활동 키워드를 입력하세요">
+                    </div>
+                    <button class="ic ic_search">
+                        <img src="./image/ic_search.svg" alt="검색어 찾기">
+                    </button>
+                </div>
+                
+                <div class="util_wrap">
+                    <a href="#" class="ic ic_bookmark">
+                        <img src="./image/ic_bookmark.svg" alt="즐겨찾기 바로가기">
+                    </a>
+                    <a href="#" class="ic ic_bell">
+                        <img src="./image/ic_bell.svg" alt="알림 바로가기">
+                    </a>
+
+                    <!-- 로그인 했을때 -->
+                    <div class="logout hidden-mo">
+                        <a href="#" class="profile">
+                            <span class="thumb">
+
+                                <!-- 등록된 프로필이 없을때 기본 썸네일 -->
+                                <img src="./image/ic_thumb.png" alt="기본 프로필 사진">
+                                
+                            </span>
+                            <span class="name">김사봉</span>
+                        </a>
+                        <a href="#" class="link_logout">
+                            <span>로그아웃</span>
+                        </a>
+                    </div>
+
+                    <!-- 로그아웃했을때 -->
+                    <!-- <div class="login hidden-mo">
+                        <a href="#" class="link_login">로그인</a>
+                    </div> -->
+                </div>
+        </header>
+
+
+
+        <nav id="top_menu" class="">
+            <!-- 사이드 검색필터 -->
+             <div id="side_menu">
+                <section id="" class="banner_wrap hidden-mo">
+                    <a href="#">
+                        <div class="ic">
+                            <img src="./image/ic_gnb04.svg" alt="리워드 샵">
+                        </div>
+                        <p class="">리워드 샵</p>
+                    </a>
+                    <a href="#">
+                        <div class="ic">
+                            <img src="./image/ic_gnb02.svg" alt="물품 나눔">
+                        </div>
+                        <p class="">물품 나눔</p>
+                    </a>
+                    <a href="#">
+                        <div class="ic">
+                            <img src="./image/ic_gnb03.svg" alt="데일리 목표">
+                        </div>
+                        <p class="">데일리 목표</p>
+                    </a>
+                </section>
+
+                <section class="">
+                    <h6 class="tab_tit">활동지역</h6>
+                    <div class="tab_wrap">
+                        <input type="checkbox" id="checkbox_local01" checked>
+                        <label for="checkbox_local01">서울</label>
+                        
+                        <input type="checkbox" id="checkbox_local02">
+                        <label for="checkbox_local02">경기</label>
+                        
+                        <input type="checkbox" id="checkbox_local03">
+                        <label for="checkbox_local03">인천</label>
+
+                        <input type="checkbox" id="checkbox_local04">
+                        <label for="checkbox_local04">강원</label>
+                        
+                        <input type="checkbox" id="checkbox_local05">
+                        <label for="checkbox_local05">충남</label>
+
+                        <input type="checkbox" id="checkbox_local06">
+                        <label for="checkbox_local06">대전</label>
+                        
+                        <input type="checkbox" id="checkbox_local07">
+                        <label for="checkbox_local07">충북</label>
+
+                        <input type="checkbox" id="checkbox_local08">
+                        <label for="checkbox_local08">세종</label>
+                        
+                        <input type="checkbox" id="checkbox_local09">
+                        <label for="checkbox_local09">부산</label>
+
+                        <input type="checkbox" id="checkbox_local10">
+                        <label for="checkbox_local10">울산</label>
+                        
+                        <input type="checkbox" id="checkbox_local11">
+                        <label for="checkbox_local11">대구</label>
+
+                        <input type="checkbox" id="checkbox_local12">
+                        <label for="checkbox_local12">경북</label>
+                        
+                        <input type="checkbox" id="checkbox_local13">
+                        <label for="checkbox_local13">경남</label>
+
+                        <input type="checkbox" id="checkbox_local14">
+                        <label for="checkbox_local14">전남</label>
+                        
+                        <input type="checkbox" id="checkbox_local15">
+                        <label for="checkbox_local15">광주</label>
+
+                        <input type="checkbox" id="checkbox_local16">
+                        <label for="checkbox_local16">전북</label>
+                        
+                        <input type="checkbox" id="checkbox_local17">
+                        <label for="checkbox_local17">제주</label>
+                        
+                        <input type="checkbox" id="checkbox_local_all">
+                        <label for="checkbox_local_all">전국</label>
+
+                    </div>
+                </section>
+
+                <section>
+                    <h6 class="tab_tit">선호 활동</h6>
+                    <div class="tab_wrap">
+                        <input type="checkbox" id="checkbox_like01" checked>
+                        <label for="checkbox_like01">OA</label>
+                        
+                        <input type="checkbox" id="checkbox_like02">
+                        <label for="checkbox_like02">마케팅</label>
+                        
+                        <input type="checkbox" id="checkbox_like03">
+                        <label for="checkbox_like03">개발</label>
+                        
+                        <input type="checkbox" id="checkbox_like04">
+                        <label for="checkbox_like04">정리</label>
+                        
+                        <input type="checkbox" id="checkbox_like05">
+                        <label for="checkbox_like05">교육</label>
+                        
+                        <input type="checkbox" id="checkbox_like06">
+                        <label for="checkbox_like06">디자인</label>
+                        
+                        <input type="checkbox" id="checkbox_like07">
+                        <label for="checkbox_like07">공예</label>
+                        
+                        <input type="checkbox" id="checkbox_like08">
+                        <label for="checkbox_like08">언어</label>
+                        
+                        <input type="checkbox" id="checkbox_like09">
+                        <label for="checkbox_like09">법률</label>
+                        
+                        <input type="checkbox" id="checkbox_like10">
+                        <label for="checkbox_like10">상담</label>
+
+                    </div>
+                </section>
+
+                <section>
+                    <h6 class="tab_tit">봉사 대상</h6>
+                    <div class="select_wrap">
+                        <select name="select_target" id="">
+                            <option value="선택하세요">선택하세요</option>
+                            <option value="아동/청소년">아동/청소년</option>
+                            <option value="아동/청소년">아동/청소년</option>
+                            <option value="아동/청소년">아동/청소년</option>
+                        </select>
+                    </div>
+                </section>
+                    
+                <section>
+                    <div class="radio_wrap">
+                        <input type="radio" id="radio_all" name="radio_onoff">
+                        <label for="radio_all">오프라인/온라인</label>
+
+                        <input type="radio" id="radio_offline" name="radio_onoff">
+                        <label for="radio_offline">오프라인</label>
+
+                        <input type="radio" id="radio_online" name="radio_onoff">
+                        <label for="radio_online">온라인</label>
+                    </div>
+                </section>
+            </div>
+        </nav>
+
+        <!-- 상세 전체-->
+        <main>
+            <section class="top_wrap">
+                <h1 class="tit">
+                    2024 모두예술극장 기획 프로그램 키아라 베르사니 활동 전시회
+                </h1>
+                <div class="btn_wrap">
+                    <a class="btn_like" href="#">
+                        즐겨찾기 추가
+                        <img src="./image/ic_bookmark.svg" alt="즐겨찾기 추가" class="ic ">
+                    </a>
+                    <a class="btn_submit" href="#">
+                        신청하러 가기
+                        <img src="./image/ic_arrowright.svg" alt="신청하러 가기" class="ic">
+                    </a>
+                </div>
+                <dl class="label_wrap">
+                    <dt>기업형태</dt>
+                    <dd>비영리단체/협회/재단</dd>
+                    
+                    <dt>참여대상</dt>
+                    <dd><span class="label-box">청소년/성인</span></dd>
+                    
+                    <dt>접수기간</dt>
+                    <dd>
+                        <dl class="date_label_wrap">
+                            <dt>시작일</dt>
+                            <dd>24.11.18</dd>
+                            
+                            <dt>종료일</dt>
+                            <dd>24.12.01</dd>
+                        </dl>
+                    </dd>
+                    
+                    <dt>활동기간</dt>
+                    <dd>
+                        <span>24.11</span>
+                        ~
+                        <span>24.12</span>
+                    </dd>
+                    
+                    <dt>모집인원</dt>
+                    <dd>0명</dd>
+                    
+                    <dt>활동지역</dt>
+                    <dd>서울 서대문구</dd>
+                    
+                    <dt>봉사대상</dt>
+                    <dd>
+                        <span class="label-box">청소년/성인</span>
+                    </dd>
+                    
+                    <dt>리워드</dt>
+                    <dd>
+                        3
+                        어흥
+                    </dd>
+                    
+                    <dt>활동혜택</dt>
+                    <dd>교통비</dd>
+                    
+                    <dt>관심분야</dt>
+                    <dd><span class="label-box">디자인/사진/예술/영상</span></dd>
+                </dl>
+            </section>
+            <section class="con_wrap">
+                <h3>상세내용</h3>
+                <div class="con">상세내용이 들어갑니다
+                상세내용이 들어갑니다
+                상세내용이 들어갑니다
+                상세내용이 들어갑니다
+                상세내용이 들어갑니다
+                상세내용이 들어갑니다
+                상세내용이 들어갑니다
+                상세내용이 들어갑니다
+                상세내용이 들어갑니다
+                상세내용이 들어갑니다
+                상세내용이 들어갑니다
+                상세내용이 들어갑니다
+                상세내용이 들어갑니다
+                </div>
+            </section>
+            <section class="comment_wrap">
+                <h3>댓글</h3>
+                <div class="write_wrap">
+                    <textarea name="textrea_comment" id="textrea_comment" placeholder="댓글을 작성해주세요" style="width: 100%; resize: none;"></textarea>
+                    <button class="btn_register">등록</button>
+                </div>
+                <ul class="list_wrap">
+                   <li>
+                    <strong>안녕하세요! 링커리어 콘텐츠 에디터 17기 김의윤입니다. 콘텐츠 제작을 꿈꾸는 많은 학생분들에게 유용할 "문화정보원 문화 PD 21기" 최종 합격자 인터뷰 를 준비했습니다!</strong>
+                    <p>
+                        <span class="date">2024.01.01</span>
+                        <span class="name">풍핑이</span>
+                    </p>
+                   </li>
+                   <li>
+                    <strong>안녕하세요! 링커리어 콘텐츠 에디터 17기 김의윤입니다. 콘텐츠 제작을 꿈꾸는 많은 학생분들에게 유용할 "문화정보원 문화 PD 21기" 최종 합격자 인터뷰 를 준비했습니다!</strong>
+                    <p>
+                        <span class="date">2024.01.01</span>
+                        <span class="name">풍핑이</span>
+                    </p>
+                   </li>
+                   <li>
+                    <strong>안녕하세요! 링커리어 콘텐츠 에디터 17기 김의윤입니다. 콘텐츠 제작을 꿈꾸는 많은 학생분들에게 유용할 "문화정보원 문화 PD 21기" 최종 합격자 인터뷰 를 준비했습니다!
+                        안녕하세요! 링커리어 콘텐츠 에디터 17기 김의윤입니다. 콘텐츠 제작을 꿈꾸는 많은 학생분들에게 유용할 "문화정보원 문화 PD 21기" 최종 합격자 인터뷰 를 준비했습니다!
+                        안녕하세요! 링커리어 콘텐츠 에디터 17기 김의윤입니다. 콘텐츠 제작을 꿈꾸는 많은 학생분들에게 유용할 "문화정보원 문화 PD 21기" 최종 합격자 인터뷰 를 준비했습니다!
+                    </strong>
+                    <p>
+                        <span class="date">2024.01.01</span>
+                        <span class="name">풍핑이</span>
+                    </p>
+                   </li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- 추천봉사활동 -->
+         <aside>
+            <h5>추천봉사활동</h5>
+            <ul>
+                <li>
+                    <a href="#">
+                        <strong class="num">01</strong>
+                        <p>새희망공동희망가정 청소 및 아동돌봄 보조</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <strong class="num">02</strong>
+                        <p>새희망공동희망가정 청소 및 아동돌봄 보조</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <strong class="num">03</strong>
+                        <p>새희망공동희망가정 청소 및 아동돌봄 보조</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <strong class="num">04</strong>
+                        <p>새희망공동희망가정 청소 및 아동돌봄 보조</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <strong class="num">05</strong>
+                        <p>새희망공동희망가정 청소 및 아동돌봄 보조</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <strong class="num">06</strong>
+                        <p>새희망공동희망가정 청소 및 아동돌봄 보조</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <strong class="num">07</strong>
+                        <p>새희망공동희망가정 청소 및 아동돌봄 보조</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <strong class="num">08</strong>
+                        <p>새희망공동희망가정 청소 및 아동돌봄 보조</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <strong class="num">09</strong>
+                        <p>새희망공동희망가정 청소 및 아동돌봄 보조</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <strong class="num">10</strong>
+                        <p>글씨가넘어가면이렇게나와요글씨가넘어가면이렇게나와요글씨가넘어가면이렇게나와요글씨가넘어가면이렇게나와요글씨가넘어가면이렇게나와요글씨가넘어가면이렇게나와요</p>
+                    </a>
+                </li>
+            </ul>
+         </aside>
+
+        <!-- 하단 푸터 -->
+         <footer>
+            <p>
+                사자는봉사를좋아해@2024. All rights reserved.
+            </p>
+         </footer>
+
+         <div class="gnb visible-mo">
+            <a href="./index.html">
+                <div class="ic">
+                    <img src="./image/ic_gnb01.svg" alt="홈">
+                </div>
+                <p>홈</p>
+            </a>
+            <a href="">
+                <div class="ic">
+                    <img src="./image/ic_gnb02.svg" alt="물품 나눔">
+                </div>
+                <p>물품 나눔</p>
+            </a>
+            <a href="">
+                <div class="ic">
+                    <img src="./image/ic_gnb03.svg" alt="데일리 목표">
+                </div>
+                <p>데일리 목표</p>
+            </a>
+            <a href="">
+                <div class="ic">
+                    <img src="./image/ic_gnb04.svg" alt="리워드 샵">
+                </div>
+                <p>리워드 샵</p>
+            </a>
+            <a href="">
+                <div class="ic">
+                    <img src="./image/ic_gnb05.svg" alt="내 정보">
+                </div>
+                <p>내 정보</p>
+            </a>
+         </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        //모바일에서 검색바를 누르면 검색필터가 나오게
+        $('.search_bar').click(function(){
+            $('nav').slideDown(200);
+            $('body').addClass('active');
+        });
+
+        //뒤로가기를 누르면 검색필터가 닫히게
+        $('.ic_back').click(function(){
+            $('nav').slideUp(200);
+            $('body').removeClass('active');
+        });
+
+        //검색창에서 작성하면 텍스트삭제되게
+        var clearInput = function(obj) {
+            obj.parentNode.querySelector('input').value = ""
+        }
+
+        $('.btn_like').click(function(){
+            $(this).toggleClass('active');
+        });
+    });
+</script>
+
+</html>
