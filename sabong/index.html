@@ -47,12 +47,14 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="text/javascript">
-        //include
-        $("#header").load("./common/header.html");
-        $("#nav").load("./common/nav.html");
-        $("#footer").load("./common/footer.html");
+        $(document).ready(function(){
+            //include
+            $("#header").load("./common/header.html");
+            $("#nav").load("./common/nav.html");
+            $("#footer").load("./common/footer.html");
+        });
     </script>
-    <script type="text/javascript" src="./js/common.js"></script>
+
 </head>
 <body>
     <div class="container" id="main">
@@ -232,4 +234,5 @@
         <div id="footer"></div>
     </div>
 </body>
+
 </html>
