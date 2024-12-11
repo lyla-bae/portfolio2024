@@ -193,7 +193,7 @@ main .board_wrap .board_con .reward .ic_lion::before{
 }
 #list_view #nav{
     grid-column: 1/3;
-    
+    z-index: 99999;
 }
 #list_view #side_menu{
     padding:  0;
@@ -521,7 +521,7 @@ main .board_wrap .board_con .reward .ic_lion::before{
         flex-direction: column;
     }
     #list_view #nav{
-        display: none;
+        /* display: none; */
     }
     #list_view #side_menu section{
         display: block;
